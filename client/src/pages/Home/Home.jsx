@@ -47,12 +47,13 @@ const Home = () => {
           >
             {/* MAIN HEADING */}
              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-    Tailored Tech Solutions, <br /> Simplified Growth
+    Tailored Tech Solutions<br /> Simplified Growth
   </h1>
 
             {/* SUPPORTING PARAGRAPH */}
             <p className="text-[17px] text-gray-700 mt-5 leading-relaxed max-w-xl mx-auto md:mx-0">
-              Delivering custom software, automation, and digital solutions—cloud-native, scalable, and integration-ready for modern businesses.
+              Custom software, automation, and IT services—
+delivered as solutions or dedicated tech teams.
             </p>
 
             {/* BUTTONS */}
