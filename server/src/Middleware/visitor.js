@@ -8,25 +8,21 @@ const COOKIE_MAX_AGE =
   1000 * 60 * 60 * 24 * 365;
 
 function visitorMiddleware(req, res, next) {
-  // cookie-parser must be used before this middleware
-  const vid = req.cookies?.[COOKIE_NAME];
+  let vid = req.cookies && req.cookies[COOKIE_NAME];
 
   if (!vid) {
-    const newVid = `v_${uuidv4()}`;
+    vid = `v_${uuidv4()}`;
     const isProd = process.env.NODE_ENV === "production";
 
-    res.cookie(COOKIE_NAME, newVid, {
-      httpOnly: false,
+    res.cookie(COOKIE_NAME, vid, {
+      httpOnly: false, // agar frontend JS ko read karna hai
       secure: isProd,
       sameSite: "lax",
       maxAge: COOKIE_MAX_AGE,
     });
-
-    req.visitorId = newVid;
-  } else {
-    req.visitorId = vid;
   }
 
+  req.visitorId = vid;
   next();
 }
 
