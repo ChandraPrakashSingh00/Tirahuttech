@@ -107,7 +107,7 @@ const PackagesSection = () => {
           Our Packages
         </h1>
         <p className="text-base sm:text-lg max-w-xl mx-auto opacity-80 text-gray-700">
-          Flexible plans to help your business grow. Choose the one that fits best.
+          Custom Solution and enterprise engagement available on request
         </p>
       </div>
 

@@ -26,8 +26,8 @@ function VisionSection() {
 
         {/* DESCRIPTION */}
         <p className="text-base md:text-lg leading-relaxed text-white/90 mb-10">
-          We focus on long-term impact — creating meaningful digital experiences,
-          strong brand foundations, and scalable solutions that grow with you.
+          Long-term, scalable solutions built to grow with your business.
+
         </p>
 
         {/* CTA – NO BACKGROUND */}

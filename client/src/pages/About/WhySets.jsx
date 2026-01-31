@@ -5,23 +5,23 @@ import { ShapeHexagonFilled, ShapeSquareFilled, ShapeQuadFilled, ShapeTriangleOu
 const WhyChooseUs = () => {
   const items = [
     {
-      title: "Brand Making",
-      desc: "From sharp strategy to credible reputation, establish your authority and become the go-to BRAND in your domain.",
+      title: "Engineering-Led Solutions",
+      desc: "Robust software and systems built to scale and last.",
       icon: <FaBullhorn />,
     },
     {
       title: "Highly Proficient Team",
-      desc: "Seasoned specialists who remove friction and elevate growth with accountable, end-to-end execution.",
+      desc: "Experienced developers and engineers delivering with accountability.",
       icon: <FaUsers />,
     },
     {
       title: "Strategic Planning",
-      desc: "Well-researched, data-driven strategies designed for sustainable long-term business success.",
+      desc: "Clear planning aligned with long-term business goals.",
       icon: <FaChessKnight />,
     },
     {
       title: "High Success Rate",
-      desc: "Proven track record of delivering consistent, measurable, and scalable business results.",
+      desc: "Consistent, measurable results through dependable execution.",
       icon: <FaChartLine />,
     },
   ];

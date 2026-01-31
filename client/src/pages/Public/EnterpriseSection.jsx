@@ -134,9 +134,8 @@ export default function EnterpriseSection() {
                 leading-relaxed
               "
               >
-                With our complete business under control, our productivity is up
-                <span className="font-bold"> 80% </span>
-                in the last year that we have been using Tirahut Tech.
+                From startups to enterprises, Tirahut Tech scales
+with your business through flexible solutions and teams
               </p>
 
               {/* USER */}
@@ -148,7 +147,7 @@ export default function EnterpriseSection() {
                 />
                 <div>
                   <h4 className="font-semibold text-[#01686d] text-sm sm:text-base">
-                    Thomas John
+                    Kautilya
                   </h4>
                   <p className="text-xs sm:text-sm text-gray-500">
                     Managing Director, Agappe Diagnostics

@@ -9,23 +9,23 @@ import { ShapeBeanFilled, ShapeBlobAFilled, ShapeBlobAOutline, ShapeBlobBFilled,
 
 const features = [
   {
-    title: "Happy 2 Help",
-    desc: "Everything we do reduces effort for you—our culture, comms, and delivery are designed to make marketing easier.",
+    title: "Easy to Work With ",
+    desc: "Clear communication and smooth delivery that reduce technical complexity.",
     icon: <Smile className="text-white" size={26} />,
   },
   {
     title: "Team of Experts",
-    desc: "Marketing evolves daily, so do we—bringing deep channel specialists to give your campaigns real punch.",
+    desc: "Experienced developers and engineers with real ownership of outcomes",
     icon: <Users className="text-white" size={26} />,
   },
   {
     title: "Proven Process",
-    desc: "Every engagement begins with discovery, insight-driven planning, and a custom roadmap to outcomes.",
+    desc: "Discovery-led planning with clear roadmaps from idea to delivery.",
     icon: <Settings className="text-white" size={26} />,
   },
   {
     title: "Real Results",
-    desc: "Treat marketing as investment—optimize for pipeline and revenue, not vanity metrics.",
+    desc: "Technology investments focused on measurable business impact.",
     icon: <DollarSign className="text-white" size={26} />,
   },
 ];
