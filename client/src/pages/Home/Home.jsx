@@ -45,15 +45,17 @@ const Home = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-[#0b2f32] md:text-left text-center"
           >
+            {/* MAIN HEADING */}
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Tailored Tech Solutions, <br /> Simplified Growth
             </h1>
 
+            {/* SUPPORTING PARAGRAPH */}
             <p className="text-[17px] text-gray-700 mt-5 leading-relaxed max-w-xl mx-auto md:mx-0">
-              Custom software, automation, and digital solutions—delivered as complete products or via dedicated IT professionals.  
-              Cloud-native, scalable, and integration-ready for modern businesses.
+              Delivering custom software, automation, and digital solutions—cloud-native, scalable, and integration-ready for modern businesses.
             </p>
 
+            {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
               <Link to="/contact">
                 <button className="px-7 py-3 bg-[#01686d] text-white font-semibold rounded-lg border border-[#01686d] hover:bg-[#00444b] transition">
