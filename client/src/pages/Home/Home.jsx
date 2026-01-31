@@ -48,12 +48,12 @@ const Home = () => {
             className="text-[#0b2f32] md:text-left text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Tailored Tech Solution<br />Simplified Growth  
+              Custom IT services <br /> made simple
             </h1>
 
             <p className="text-[17px] text-gray-700 mt-5 leading-relaxed max-w-xl mx-auto md:mx-0">
-             Custom software, automation, and digital solutions—delivered as complete products or through dedicated IT professionals.
-Cloud-native, scalable, and integration-ready for modern businesses.
+             Professional IT & software services for Indian SMEs,
+Cloud-native, GST-ready & WhatsApp integration.
 
             </p>
 
@@ -85,7 +85,7 @@ Cloud-native, scalable, and integration-ready for modern businesses.
             className="flex justify-center md:justify-end"
           >
             <motion.img
-              src="/img/ko.png"
+              src="/img/image.png"
               alt="Business Dashboard Illustration"
               className="w-[350px] sm:w-[450px] md:w-[550px] object-contain"
               initial={{ scale: 0.9 }}
