@@ -21,7 +21,7 @@ const PopupForm = ({ onClose }) => {
     });
   };
 
-  // ================= SUBMIT HANDLER =================
+  // ================= SUBMIT =================
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -42,7 +42,9 @@ const PopupForm = ({ onClose }) => {
         }
       );
 
-      if (!res.ok) throw new Error("Request Failed");
+      if (!res.ok) {
+        throw new Error("Request failed");
+      }
 
       setStatus("success");
 
@@ -50,8 +52,8 @@ const PopupForm = ({ onClose }) => {
         onClose();
       }, 1200);
 
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      console.error(err);
       setStatus("error");
     } finally {
       setLoading(false);
@@ -73,7 +75,7 @@ const PopupForm = ({ onClose }) => {
           transition={{ duration: 0.35 }}
           className="bg-white rounded-xl w-full max-w-5xl max-h-[90vh] overflow-hidden relative flex flex-col md:flex-row"
         >
-          {/* Close Button */}
+          {/* CLOSE BUTTON */}
           <button
             onClick={onClose}
             className="absolute top-3 right-3 bg-[#00444b] hover:bg-[#01686d] text-white rounded-full p-2 transition z-50"
@@ -81,8 +83,8 @@ const PopupForm = ({ onClose }) => {
             <FaTimes size={16} />
           </button>
 
-          {/* ================= LEFT IMAGE ================= */}
-          <div className="relative w-full md:w-1/2 bg-white flex items-center justify-center p-5 sm:p-8 md:p-6 overflow-hidden border-b md:border-b-0 md:border-r border-gray-200">
+          {/* LEFT IMAGE */}
+          <div className="relative w-full md:w-1/2 flex items-center justify-center p-6 overflow-hidden border-b md:border-b-0 md:border-r">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 0.5, x: 0 }}
@@ -99,17 +101,17 @@ const PopupForm = ({ onClose }) => {
             <img
               src="/img/tira.png"
               alt="Tirahut Tech"
-              className="w-[80%] md:w-full h-auto object-contain relative z-10 drop-shadow-xl"
+              className="w-[80%] md:w-full object-contain relative z-10 drop-shadow-xl"
             />
           </div>
 
-          {/* ================= RIGHT FORM ================= */}
+          {/* RIGHT FORM */}
           <motion.div
             initial={{ x: 40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 40, opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="w-full md:w-1/2 bg-white p-5 sm:p-8 md:p-10 overflow-y-auto"
+            className="w-full md:w-1/2 p-6 sm:p-8 md:p-10 overflow-y-auto"
           >
             <h1 className="text-4xl font-bold text-center text-[#003C3F]">
               TIRAHUT TECH
@@ -120,31 +122,31 @@ const PopupForm = ({ onClose }) => {
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <input
+                type="text"
                 name="fullName"
+                placeholder="Full Name"
                 value={formData.fullName}
                 onChange={handleChange}
-                type="text"
-                placeholder="Full Name"
                 required
                 className="border px-4 py-3 rounded-md"
               />
 
               <input
+                type="email"
                 name="businessEmail"
+                placeholder="Business Email"
                 value={formData.businessEmail}
                 onChange={handleChange}
-                type="email"
-                placeholder="Business Email"
                 required
                 className="border px-4 py-3 rounded-md"
               />
 
               <input
+                type="tel"
                 name="phoneNumber"
+                placeholder="Phone Number"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                type="tel"
-                placeholder="Phone Number"
                 required
                 className="border px-4 py-3 rounded-md"
               />
@@ -168,10 +170,10 @@ const PopupForm = ({ onClose }) => {
 
               <textarea
                 name="requirements"
-                value={formData.requirements}
-                onChange={handleChange}
                 rows="4"
                 placeholder="Tell us about your requirements..."
+                value={formData.requirements}
+                onChange={handleChange}
                 required
                 className="border px-4 py-3 rounded-md resize-none"
               />
@@ -186,13 +188,13 @@ const PopupForm = ({ onClose }) => {
 
               {status === "success" && (
                 <p className="text-green-600 text-sm text-center">
-                  Submitted successfully.
+                  Submitted successfully
                 </p>
               )}
 
               {status === "error" && (
                 <p className="text-red-600 text-sm text-center">
-                  Submission failed. Please try again.
+                  Submission failed. Try again.
                 </p>
               )}
             </form>
