@@ -47,7 +47,7 @@ const Home = () => {
           >
             {/* MAIN HEADING */}
              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-    Tailored Tech Solutions<br /> Simplified Growth
+    Tailored Tech<br /> Simplified Growth
   </h1>
 
             {/* SUPPORTING PARAGRAPH */}
