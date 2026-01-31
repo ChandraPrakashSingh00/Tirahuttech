@@ -46,9 +46,9 @@ const Home = () => {
             className="text-[#0b2f32] md:text-left text-center"
           >
             {/* MAIN HEADING */}
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Tailor Tech Solutions, <br /> Simplified Growth
-            </h1>
+             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+    Tailored Tech Solutions, <br /> Simplified Growth
+  </h1>
 
             {/* SUPPORTING PARAGRAPH */}
             <p className="text-[17px] text-gray-700 mt-5 leading-relaxed max-w-xl mx-auto md:mx-0">
