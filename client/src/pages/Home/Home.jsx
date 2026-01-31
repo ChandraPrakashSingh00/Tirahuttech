@@ -48,7 +48,7 @@ const Home = () => {
             className="text-[#0b2f32] md:text-left text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Custom IT services <br /> made simple
+              Tailored Tech Solutions<br />Simplified Growth  
             </h1>
 
             <p className="text-[17px] text-gray-700 mt-5 leading-relaxed max-w-xl mx-auto md:mx-0">
@@ -85,7 +85,7 @@ Cloud-native, GST-ready & WhatsApp integration.
             className="flex justify-center md:justify-end"
           >
             <motion.img
-              src="/img/image.png"
+              src="/img/ko.png"
               alt="Business Dashboard Illustration"
               className="w-[350px] sm:w-[450px] md:w-[550px] object-contain"
               initial={{ scale: 0.9 }}
