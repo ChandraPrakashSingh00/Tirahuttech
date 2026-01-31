@@ -29,7 +29,7 @@ const PopupForm = ({ onClose }) => {
 
     try {
       const res = await fetch(
-        "https://tirahuttech.vercel.app/api/Form/popup",
+        "https://tirahuttech.vercel.app/api/Form/enquiry",
         {
           method: "POST",
           headers: {
