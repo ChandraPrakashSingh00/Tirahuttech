@@ -48,12 +48,12 @@ const Home = () => {
             className="text-[#0b2f32] md:text-left text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Tailored Tech Solutions<br />Simplified Growth  
+              Tailored Tech Solution<br />Simplified Growth  
             </h1>
 
             <p className="text-[17px] text-gray-700 mt-5 leading-relaxed max-w-xl mx-auto md:mx-0">
-             Professional IT & software services for Indian SMEs,
-Cloud-native, GST-ready & WhatsApp integration.
+             Custom software, automation, and digital solutions—delivered as complete products or through dedicated IT professionals.
+Cloud-native, scalable, and integration-ready for modern businesses.
 
             </p>
 
