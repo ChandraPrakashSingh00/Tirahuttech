@@ -12,7 +12,7 @@ const teamMembers = [
     {
     name: "Chirag Sharma",
     tag: "General Manager / COO",
-    image: "/empimg/chirag.jpg",
+    image: "/empimg/chirag.png",
     social: {
       linkedin: "https://linkedin.com",
       instagram: "https://instagram.com",
@@ -44,7 +44,7 @@ const teamMembers = [
     {
     name: "Rishabh Kumar",
     tag: "Front-End & UI/UX Lead",
-    image: "/empimg/ro.jpeg",
+    image: "/empimg/riy.jpeg",
     social: {
       linkedin: "https://linkedin.com",
       instagram: "https://instagram.com",

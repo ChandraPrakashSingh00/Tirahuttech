@@ -57,7 +57,7 @@ export default function EnterpriseSection() {
               mx-auto lg:mx-0
             "
           >
-            Unlock the full potential of your large-scale operations. Experience
+            Unlock the full potential of your operations. Experience
             a unified ecosystem with advanced professional services, robust
             infrastructure, top-tier support, and enterprise-grade security.
             Streamline complex processes, foster deeper customer relationships,

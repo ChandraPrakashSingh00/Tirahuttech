@@ -95,7 +95,7 @@ function TrihutTech() {
                   🚀 <span className="flex-1">Service</span> →
                 </Link>
 
-                <Link
+                {/* <Link
                   to="/product"
                   onClick={() => setOpenDropdown(false)}
                   className="flex items-center gap-3 px-6 py-5 text-gray-800 font-medium
@@ -103,7 +103,7 @@ function TrihutTech() {
                              hover:text-white transition"
                 >
                   📦 <span className="flex-1">Product</span> →
-                </Link>
+                </Link> */}
               </div>
             )}
           </div>
@@ -126,7 +126,7 @@ function TrihutTech() {
             <img
               src="/empimg/rupesh.jpg"
               alt="CEO"
-              className="w-20 h-20 rounded-full object-cover
+              className="w-20 h-20 rounded-full object-contain object-center
            ring-4 ring-orange-500 shadow-md"
             />
 
@@ -135,7 +135,7 @@ function TrihutTech() {
                 Kautilya
               </h3>
               <p className="text-sm text-gray-500">
-                CEO, 5paisa.com
+                CEO, Tirahut Tech
               </p>
             </div>
           </div>

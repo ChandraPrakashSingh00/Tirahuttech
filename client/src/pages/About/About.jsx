@@ -64,7 +64,7 @@ const AboutSection = () => {
             <div className="w-16 h-1 bg-[#f27b22] mt-5 mb-5 rounded-full" />
 
             <p className="text-base sm:text-lg text-[#01686d] font-medium mb-2">
-              We help brands grow digitally.
+              We help businesses grow through technology
             </p>
 
             <p className="text-sm sm:text-base text-gray-600 mb-5 max-w-lg">

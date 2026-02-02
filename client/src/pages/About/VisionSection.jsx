@@ -18,7 +18,8 @@ function VisionSection() {
 
         {/* HEADING – SINGLE LINE */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-7">
-          Building brands & systems that are made to last
+          Building technology & systems
+that are made to last
         </h2>
 
         {/* DIVIDER */}

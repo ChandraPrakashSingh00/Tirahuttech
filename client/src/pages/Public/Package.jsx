@@ -117,6 +117,7 @@ const PackagesSection = () => {
           <PackageCard key={i} pkg={pkg} />
         ))}
       </div>
+      <hr />
       
     </div>
   );

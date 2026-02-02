@@ -95,7 +95,7 @@ const Navbar = () => {
       {/* DESKTOP MENU */}
       <ul className="hidden md:flex gap-6 font-medium text-[15px]">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">Who We Are</Link></li>
+        <li><Link to="/about">About</Link></li>
 
         {/* SERVICES */}
         <li className="relative flex items-center gap-1">

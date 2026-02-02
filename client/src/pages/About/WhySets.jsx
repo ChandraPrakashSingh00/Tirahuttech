@@ -15,12 +15,12 @@ const WhyChooseUs = () => {
       icon: <FaUsers />,
     },
     {
-      title: "Strategic Planning",
+      title: "Strategic & Systems Thinking",
       desc: "Clear planning aligned with long-term business goals.",
       icon: <FaChessKnight />,
     },
     {
-      title: "High Success Rate",
+      title: "Proven Delivery & Reliability",
       desc: "Consistent, measurable results through dependable execution.",
       icon: <FaChartLine />,
     },
