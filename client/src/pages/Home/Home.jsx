@@ -64,7 +64,7 @@ delivered as solutions or dedicated tech teams.
                 </button>
               </Link>
 
-              <Link to="/services">
+              <Link to="/service">
                 <button className="px-7 py-3 bg-white text-[#01686d] font-semibold rounded-lg border border-[#01686d] hover:bg-[#f1f1f1] transition">
                   Explore Services
                 </button>
