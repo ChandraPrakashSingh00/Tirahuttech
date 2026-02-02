@@ -5,7 +5,6 @@ function TrihutTech() {
   const [openDropdown, setOpenDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -27,13 +26,10 @@ function TrihutTech() {
             <p className="text-base sm:text-lg">
               To build anything that truly lasts,
             </p>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
               it takes time
             </h1>
-
             <div className="w-14 h-[2px] bg-white mx-auto lg:mx-0" />
-
             <button className="text-white font-semibold hover:opacity-80 transition">
               READ THE STORY ↗
             </button>
@@ -50,7 +46,6 @@ function TrihutTech() {
       >
         {/* LEFT CONTENT */}
         <div className="max-w-xl space-y-6 text-white text-center lg:text-left">
-
           <div className="flex items-center justify-center lg:justify-start gap-4">
             <img src="/img/logo.png" alt="Logo" className="w-12" />
             <p className="text-lg text-white/90">All-in-one suite</p>
@@ -78,8 +73,7 @@ function TrihutTech() {
                          flex items-center gap-3
                          transition-all duration-300 hover:scale-[1.03]"
             >
-              TRY TIRAHUT TECH
-              <span>▸</span>
+              TRY TIRAHUT TECH <span>▸</span>
             </button>
 
             {openDropdown && (
@@ -94,16 +88,6 @@ function TrihutTech() {
                 >
                   🚀 <span className="flex-1">Service</span> →
                 </Link>
-
-                {/* <Link
-                  to="/product"
-                  onClick={() => setOpenDropdown(false)}
-                  className="flex items-center gap-3 px-6 py-5 text-gray-800 font-medium
-                             hover:bg-gradient-to-r hover:from-[#f27b22] hover:to-[#d96c1f]
-                             hover:text-white transition"
-                >
-                  📦 <span className="flex-1">Product</span> →
-                </Link> */}
               </div>
             )}
           </div>
@@ -122,21 +106,21 @@ function TrihutTech() {
             Tirahut Tech One works for all.
           </p>
 
-          <div className="flex items-center gap-4 justify-center lg:justify-start pt-4 ">
-            <img
-              src="/empimg/rupesh.jpg"
-              alt="CEO"
-              className="w-20 h-20 rounded-full object-contain object-center
-           ring-4 ring-orange-500 shadow-md"
-            />
+          {/* CEO INFO */}
+          <div className="flex items-center gap-4 justify-center lg:justify-start pt-4">
+
+            {/* IMAGE WRAPPER FIXED */}
+            <div className="w-20 h-20 rounded-full overflow-hidden ring-4 ring-orange-500 shadow-md bg-gray-100 flex-shrink-0">
+              <img
+                src="/empimg/rupesh.jpg"
+                alt="CEO"
+                className="w-full h-full object-cover object-[50%_60%] scale-100"
+              />
+            </div>
 
             <div className="text-left">
-              <h3 className="text-xl font-bold text-gray-900">
-                Kautilya
-              </h3>
-              <p className="text-sm text-gray-500">
-                CEO, Tirahut Tech
-              </p>
+              <h3 className="text-xl font-bold text-gray-900">Kautilya</h3>
+              <p className="text-sm text-gray-500">CEO, Tirahut Tech</p>
             </div>
           </div>
         </div>

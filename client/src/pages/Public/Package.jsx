@@ -47,27 +47,29 @@ const packages = [
 ];
 
 /* =========================
-   PACKAGE CARD COMPONENT
+   PACKAGE CARD
 ========================= */
 const PackageCard = ({ pkg }) => (
   <motion.div
-    whileHover={{ y: -12, scale: 1.04 }}
-    transition={{ duration: 0.4 }}
+    whileHover={{ y: -10, scale: 1.03 }}
+    transition={{ duration: 0.35 }}
     className="relative rounded-3xl p-[1.5px] bg-gradient-to-br from-[#01686d] via-[#f27b22] to-[#00444b]"
   >
-    <div className="relative bg-white rounded-3xl p-8 h-full backdrop-blur-xl flex flex-col justify-between">
+    <div className="relative bg-white rounded-3xl p-8 h-full flex flex-col justify-between">
       {/* BADGE */}
       {pkg.badge && (
         <span className="absolute -top-4 left-1/2 -translate-x-1/2
                          bg-[#f27b22] text-white text-xs font-bold
-                         px-4 py-1 rounded-full shadow-lg">
+                         px-4 py-1 rounded-full shadow-md">
           {pkg.badge}
         </span>
       )}
 
-      {/* PRICE AREA */}
-      <div className={`rounded-2xl text-white text-center py-8 mb-8 bg-gradient-to-r ${pkg.gradient}`}>
-        <h2 className="text-lg font-semibold tracking-wide">{pkg.name}</h2>
+      {/* PRICE */}
+      <div
+        className={`rounded-2xl text-white text-center py-8 mb-8 bg-gradient-to-r ${pkg.gradient}`}
+      >
+        <h2 className="text-lg font-semibold">{pkg.name}</h2>
         <p className="text-4xl font-extrabold mt-2">{pkg.price}</p>
       </div>
 
@@ -75,18 +77,19 @@ const PackageCard = ({ pkg }) => (
       <ul className="text-sm text-gray-600 space-y-2 mb-8">
         {pkg.features.map((feature, i) => (
           <li key={i} className="flex items-center gap-2">
-            <span className="text-[#01686d] font-bold">✔</span> {feature}
+            <span className="text-[#01686d] font-bold">✔</span>
+            {feature}
           </li>
         ))}
       </ul>
 
-      {/* CTA BUTTON */}
+      {/* CTA */}
       <Link
         to={pkg.link}
-        className="w-full py-3 rounded-xl font-semibold text-white
+        className="w-full py-3 rounded-xl font-semibold text-white text-center
                    bg-gradient-to-r from-[#01686d] to-[#00444b]
                    hover:from-[#00444b] hover:to-[#01686d]
-                   transition shadow-lg text-center"
+                   transition shadow-lg"
       >
         Get Started
       </Link>
@@ -95,30 +98,43 @@ const PackageCard = ({ pkg }) => (
 );
 
 /* =========================
-   PAGE COMPONENT
+   PAGE
 ========================= */
 const PackagesSection = () => {
   return (
     <div className="min-h-screen w-full bg-gray-50 flex flex-col items-center">
 
       {/* HEADER */}
-      <div className="w-full text-center py-20 sm:py-24 px-5">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-teal-900">
+      <div className="w-full text-center py-20 px-5">
+        <h1 className="text-4xl sm:text-5xl font-bold text-teal-900 mb-3">
           Our Packages
         </h1>
-        <p className="text-base sm:text-lg max-w-xl mx-auto opacity-80 text-gray-700">
-          Custom Solution and enterprise engagement available on request
+        <p className="text-base sm:text-lg max-w-xl mx-auto text-gray-700 opacity-80">
+          Custom solutions and enterprise engagements available on request
         </p>
       </div>
 
-      {/* PACKAGE CARDS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 max-w-7xl mx-auto px-5 sm:px-6 pb-24">
+      {/* CARDS */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 max-w-7xl mx-auto px-5 pb-16">
         {packages.map((pkg, i) => (
           <PackageCard key={i} pkg={pkg} />
         ))}
       </div>
-      <hr />
-      
+
+      {/* LIGHT HR LINE */}
+      <div className="w-full max-w-4xl px-5">
+        <hr className="border-gray-300 opacity-50" />
+      </div>
+
+      {/* CUSTOM SOLUTION TEXT */}
+      <div className="text-center max-w-3xl px-6 py-10">
+        <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+          <span className="font-semibold text-teal-900">
+            Need a custom solution, enterprise setup, or a dedicated IT team?
+          </span>{" "}
+          Talk to us for a tailored engagement.
+        </p>
+      </div>
     </div>
   );
 };
