@@ -114,7 +114,7 @@ function TrihutTech() {
               <img
                 src="/empimg/rupesh.jpg"
                 alt="CEO"
-                className="w-full h-full object-cover object-[50%_60%] scale-100"
+                className="w-full h-full object-cover object-[50%_20%] "
               />
             </div>
 

@@ -108,7 +108,7 @@ export default function EnterpriseSection() {
                     className="
                       w-full h-full
                       object-cover
-                      object-[50%_65%]
+                      object-[50%_10%]
                     "
                   />
                 </div>
