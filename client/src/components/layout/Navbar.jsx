@@ -116,7 +116,7 @@ const Navbar = () => {
       path: "/our-package/web",
     },
     {
-      title: "PPC Package",
+      title: "Automation Package",
       desc: "Boost Paid Campaigns",
       icon: <MdOutlineAdsClick size={18} />,
       path: "/our-package/ppc",
