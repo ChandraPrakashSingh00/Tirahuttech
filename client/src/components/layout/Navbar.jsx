@@ -133,34 +133,33 @@ const Navbar = () => {
     <>
       <nav
         ref={navRef}
-        className={`fixed w-full top-0 left-0 z-50 bg-white transition-all duration-300 ${
-          shadow ? "shadow-lg border-b backdrop-blur-md" : ""
-        }`}
+        className={`fixed w-full top-0 left-0 z-50 bg-white transition-all duration-300 ${shadow ? "shadow-lg border-b backdrop-blur-md" : ""
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3 flex justify-between items-center">
-{/* Logo */}
-<Link to="/" className="flex items-center gap-1">
-  
-  {/* Logo Image */}
-  <img
-    src="/img/logo.png"
-    alt="Tirahut Tech Logo"
-    className="w-9 h-9 sm:w-10 sm:h-10 object-contain"
-  />
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-1">
 
-  {/* Text Section */}
-  <div className="flex flex-col leading-none">
-    
-    <h1 className="text-lg sm:text-xl font-bold text-[#003C3F]">
-      TIRAHUT
-    </h1>
+            {/* Logo Image */}
+            <img
+              src="/img/logo.png"
+              alt="Tirahut Tech Logo"
+              className="w-9 h-9 sm:w-10 sm:h-10 object-contain"
+            />
 
-    <p className="text-[10px] sm:text-xs font-semibold text-[#003C3F] ml-2 tracking-wider">
-      TECH
-    </p>
+            {/* Text Section */}
+            <div className="flex flex-col leading-none">
 
-  </div>
-</Link>
+              <h1 className="text-lg sm:text-xl font-bold text-[#003C3F]">
+                TIRAHUT
+              </h1>
+
+              <p className="text-[10px] sm:text-xs font-semibold text-[#003C3F] ml-2 tracking-wider">
+                TECH
+              </p>
+
+            </div>
+          </Link>
           {/* ================= DESKTOP ================= */}
           <ul className="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-[15px] relative">
 
@@ -177,9 +176,8 @@ const Navbar = () => {
                 className={`cursor-pointer transition ${servicesOpen ? "rotate-180" : ""}`}
               />
 
-              <div className={`absolute left-1/2 -translate-x-1/2 top-[120%] w-[95vw] max-w-[950px] bg-white shadow-2xl rounded-2xl p-6 lg:p-8 transition-all duration-300 ${
-                servicesOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"
-              }`}>
+              <div className={`absolute left-1/2 -translate-x-1/2 top-[120%] w-[95vw] max-w-[950px] bg-white shadow-2xl rounded-2xl p-6 lg:p-8 transition-all duration-300 ${servicesOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"
+                }`}>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                   {services.map((item) => (
                     <Link key={item.name} to={item.path}>
@@ -200,47 +198,46 @@ const Navbar = () => {
               </div>
             </li>
 
-          
-           {/* Package */}
-<li className="relative flex items-center gap-1">
-  <button
-    onClick={() => setPackageOpen(!packageOpen)}
-    className="flex items-center gap-1 hover:text-[#f27b22] transition focus:outline-none"
-  >
-    Our Package
-    <FiChevronDown
-      className={`transition ${packageOpen ? "rotate-180" : ""}`}
-    />
-  </button>
 
-  <div
-    className={`absolute left-1/2 -translate-x-1/2 top-[120%] w-[95vw] max-w-[850px] bg-white shadow-2xl rounded-2xl p-6 lg:p-8 transition-all duration-300 ${
-      packageOpen
-        ? "opacity-100 visible scale-100"
-        : "opacity-0 invisible scale-95"
-    }`}
-  >
-    <div className="grid sm:grid-cols-2 gap-5">
-      {packages.map((pkg) => (
-        <Link key={pkg.title} to={pkg.path}>
-          <div className="group flex gap-4 p-4 border rounded-xl hover:bg-[#f27b22] hover:shadow-lg transition-all">
-            <div className="text-[#f27b22] group-hover:text-white">
-              {pkg.icon}
-            </div>
-            <div>
-              <h3 className="font-semibold text-[#003C3F] group-hover:text-white text-sm lg:text-base">
-                {pkg.title}
-              </h3>
-              <p className="text-xs lg:text-sm text-gray-500 group-hover:text-white/90">
-                {pkg.desc}
-              </p>
-            </div>
-          </div>
-        </Link>
-      ))}
-    </div>
-  </div>
-</li>
+            {/* Package */}
+            <li className="relative flex items-center gap-1">
+              <button
+                onClick={() => setPackageOpen(!packageOpen)}
+                className="flex items-center gap-1 hover:text-[#f27b22] transition focus:outline-none"
+              >
+                Our Package
+                <FiChevronDown
+                  className={`transition ${packageOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              <div
+                className={`absolute left-1/2 -translate-x-1/2 top-[120%] w-[95vw] max-w-[850px] bg-white shadow-2xl rounded-2xl p-6 lg:p-8 transition-all duration-300 ${packageOpen
+                    ? "opacity-100 visible scale-100"
+                    : "opacity-0 invisible scale-95"
+                  }`}
+              >
+                <div className="grid sm:grid-cols-2 gap-5">
+                  {packages.map((pkg) => (
+                    <Link key={pkg.title} to={pkg.path}>
+                      <div className="group flex gap-4 p-4 border rounded-xl hover:bg-[#f27b22] hover:shadow-lg transition-all">
+                        <div className="text-[#f27b22] group-hover:text-white">
+                          {pkg.icon}
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-[#003C3F] group-hover:text-white text-sm lg:text-base">
+                            {pkg.title}
+                          </h3>
+                          <p className="text-xs lg:text-sm text-gray-500 group-hover:text-white/90">
+                            {pkg.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </li>
 
             <li><Link to="/blog" className="hover:text-[#f27b22] transition">Blog</Link></li>
             <li><Link to="/contact" className="hover:text-[#f27b22] transition">Contact</Link></li>
@@ -257,29 +254,27 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-         {/* Mobile Menu Button */}
-<button
-  onClick={() => setMobileOpen(true)}
-  className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
->
-  <div className="space-y-1.5">
-    <span className="block w-6 h-0.5 bg-[#003C3F]"></span>
-    <span className="block w-6 h-0.5 bg-[#003C3F]"></span>
-    <span className="block w-6 h-0.5 bg-[#003C3F]"></span>
-  </div>
-</button>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileOpen(true)}
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
+          >
+            <div className="space-y-1.5">
+              <span className="block w-6 h-0.5 bg-[#003C3F]"></span>
+              <span className="block w-6 h-0.5 bg-[#003C3F]"></span>
+              <span className="block w-6 h-0.5 bg-[#003C3F]"></span>
+            </div>
+          </button>
         </div>
       </nav>
 
       {/* Overlay */}
-      <div className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition ${
-        mobileOpen ? "opacity-100 visible" : "opacity-0 invisible"
-      }`} onClick={closeMobile}></div>
+      <div className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition ${mobileOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`} onClick={closeMobile}></div>
 
       {/* Mobile Drawer */}
-      <div className={`fixed top-0 right-0 w-[85%] max-w-[360px] h-full bg-white z-50 shadow-2xl transform transition-transform duration-300 overflow-y-auto ${
-        mobileOpen ? "translate-x-0" : "translate-x-full"
-      }`}>
+      <div className={`fixed top-0 right-0 w-[85%] max-w-[360px] h-full bg-white z-50 shadow-2xl transform transition-transform duration-300 overflow-y-auto ${mobileOpen ? "translate-x-0" : "translate-x-full"
+        }`}>
 
         <div className="flex justify-between items-center p-5 border-b">
           <h2 className="font-bold text-lg">Menu</h2>
@@ -291,57 +286,55 @@ const Navbar = () => {
           <Link to="/" onClick={closeMobile} className="block">Home</Link>
           <Link to="/about" onClick={closeMobile} className="block">About</Link>
 
-         {/* Services Mobile */}
-<div className="border-b pb-3">
-  <div className="flex justify-between items-center">
+          {/* Services Mobile */}
+          <div className="border-b pb-3">
+            <div className="flex justify-between items-center">
 
-    {/* Services Text → Navigate */}
-    <span
-      onClick={() => {
-        navigate("/service");
-        closeMobile();
-      }}
-      className="cursor-pointer font-medium"
-    >
-      Services
-    </span>
+              {/* Services Text → Navigate */}
+              <span
+                onClick={() => {
+                  navigate("/service");
+                  closeMobile();
+                }}
+                className="cursor-pointer font-medium"
+              >
+                Services
+              </span>
 
-    {/* Arrow → Dropdown Toggle */}
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        setMobileServices(!mobileServices);
-      }}
-      className="focus:outline-none"
-    >
-      <FiChevronDown
-        className={`transition-transform duration-300 ${
-          mobileServices ? "rotate-180" : ""
-        }`}
-      />
-    </button>
-  </div>
+              {/* Arrow → Dropdown Toggle */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setMobileServices(!mobileServices);
+                }}
+                className="focus:outline-none"
+              >
+                <FiChevronDown
+                  className={`transition-transform duration-300 ${mobileServices ? "rotate-180" : ""
+                    }`}
+                />
+              </button>
+            </div>
 
-  {/* Dropdown Items */}
-  <div
-    className={`overflow-hidden transition-all duration-300 ${
-      mobileServices ? "max-h-96 mt-3" : "max-h-0"
-    }`}
-  >
-    <div className="pl-4 space-y-3 text-sm">
-      {services.map((item) => (
-        <Link
-          key={item.name}
-          to={item.path}
-          onClick={closeMobile}
-          className="block text-gray-600 hover:text-[#f27b22] transition"
-        >
-          {item.name}
-        </Link>
-      ))}
-    </div>
-  </div>
-</div>
+            {/* Dropdown Items */}
+            <div
+              className={`overflow-hidden transition-all duration-300 ${mobileServices ? "max-h-96 mt-3" : "max-h-0"
+                }`}
+            >
+              <div className="pl-4 space-y-3 text-sm">
+                {services.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    onClick={closeMobile}
+                    className="block text-gray-600 hover:text-[#f27b22] transition"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
 
           {/* Package Mobile */}
           <div>
