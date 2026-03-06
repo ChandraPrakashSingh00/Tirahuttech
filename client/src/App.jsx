@@ -13,6 +13,8 @@ import Products from "./pages/Product/Product";
 import Services from "./pages/Service/Service";
 import About from "./pages/About/About";
 import OurPackage from "./pages/Package/OurPackage.jsx";
+import SMOPackage from "./pages/Package/SMOPackage.jsx"
+import SEOPackage from "./pages/Package/SEOPackage.jsx"
 import Contact from "./pages/Contact/Contact";
 
 // Service DropDown Pages
@@ -48,6 +50,8 @@ const App = () => {
  */}        <Route path="/service" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/our-package" element={<OurPackage />} />
+        <Route path="/SMOPackage" element={<SMOPackage/>} />
+        <Route path="SEOPackage" element={<SEOPackage/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} />
 
